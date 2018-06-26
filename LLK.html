@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title></title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        width:100%;
+        height: 100%;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+    }
+
+    #stage{
+        background-color: #EEE;
+        position: absolute;
+    }
+    canvas {
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+    .red { background-color: red; }
+	.green { background-color: green; }
+	.blue { background-color: blue; }
+	.pink { background-color: pink; }
+	.black { background-color: black; }
+    .brown{background-color: brown;}
+    .blueviolet{background-color: blueviolet;}
+    .orange{background-color: orange;}
+    .disappear{visibility: hidden;}
+
+    .selected {
+        outline: 3px solid rgba(0,0,0,.5);
+        outline-offset: 3px;
+    }
+    #stage .tile{
+        width:50px;
+        height: 50px;;
+        position: absolute;
+        float: left;
+        /* 增加动画延迟 */
+        transition:all 0.1s;
+    }
+    #button_AI{
+        display: block;
+        width: 100px;
+        height: 25px;
+        margin:50px auto;
+    }
+    </style>
+</head>
+<body>
+
+<div id="stage"></div>
+<button id="button_AI">AI自动游戏</button>
+<script src="test.js"></script>
+</body>
+</html>
